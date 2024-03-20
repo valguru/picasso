@@ -1,0 +1,11 @@
+@import "../../../app/ui/variables";
+
+.post {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 50px;
+  padding: 20px;
+  box-shadow: -4px 4px 12px 0px lighten($pink, 35%);
+  border-radius: 10px;
+}

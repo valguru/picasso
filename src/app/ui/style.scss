@@ -1,0 +1,42 @@
+@import "variables";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+body {
+  font-family: "Arial", sans-serif;
+}
+
+h1 {
+  font-family: "Arial Black", sans-serif;
+  font-size: 25px;
+  color: $purple;
+  margin-bottom: 15px;
+}
+
+.container {
+  width: 70%;
+  margin: 0 auto;
+}
+
+.btn {
+  background-color: $purple;
+  color: $white;
+  border: none;
+  text-transform: lowercase;
+  letter-spacing: 1px;
+  padding: 7px 20px;
+  border-radius: 20px;
+  cursor: pointer;
+}

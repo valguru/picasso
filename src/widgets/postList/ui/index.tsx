@@ -1,11 +1,14 @@
 import {PostItem} from "../../../entities/post/ui";
-import {useGetPostsPagedQuery} from "../../api";
+import {useGetPostsPagedQuery} from "../../api/postApi";
 import {useEffect, useState} from "react";
 import {useInView} from "react-intersection-observer";
+import {useSelector} from "react-redux";
+import {RootState} from "../../../app/store";
 import "./postList.scss"
 
 export const PostList = () => {
-    const [postStart, setPostStart] = useState(0);
+    const startPost = useSelector((state: RootState) => state.postPagination.start);
+    const [postStart, setPostStart] = useState(startPost);
     const {data: posts} = useGetPostsPagedQuery({
         start: postStart,
     });
